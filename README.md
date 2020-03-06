@@ -36,7 +36,7 @@ Unit, integration and end to end tests for all components, containers, pages etc
 
 ## Deployment
 
-Hosted at http://shoppingdiscountdeals.com
+Hosted at https://www.quality-sites.com/sites/shoppingdiscountdeals/products
 
 ## Built With
 

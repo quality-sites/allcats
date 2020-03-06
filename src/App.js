@@ -24,15 +24,13 @@ const App = () => {
             <React.Fragment>
                 <Header/>
                 <Switch>
-                    <Route exact path={'/'} render={() => {
-                        return <Redirect to={'/products'}/>
-                    }}/>
                     <Route exact path={'/products'} component={Home}/>
                     <Route exact path={'/products/:id'} component={ProductDetail}/>
                     <Route exact path={'/cart'} component={ShoppingCart}/>
                     <Route exact path={'/book-a-visit'} component={BookAVisit}/>
                     <Route exact path={'/cat-delivery'} component={CatDelivery}/>
                     <Route exact path={'/donate'} component={Donate}/>
+                    <Redirect exact from="/" to="products" />
                 </Switch>
                 <Footer/>
             </React.Fragment>
