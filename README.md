@@ -36,7 +36,7 @@ Unit, integration and end to end tests for all components, containers, pages etc
 
 ## Deployment
 
-Hosted at https://www.quality-sites.com/sites/allcats/
+Hosted at https://quality-sites.github.io/allcats/
 
 ## Built With
 
