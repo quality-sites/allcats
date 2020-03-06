@@ -1,0 +1,19 @@
+@import '../../Brand';
+
+.header-nav {
+    background-color: $navigationBackgroundColour;
+    color: $navigationColor;
+
+    a {
+        color: $navigationColor;
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+
+    .nav-item {
+        flex: 0 0 100%;
+    }
+}
