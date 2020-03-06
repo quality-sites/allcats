@@ -36,7 +36,7 @@ Unit, integration and end to end tests for all components, containers, pages etc
 
 ## Deployment
 
-Hosted at https://www.quality-sites.com/sites/shoppingdiscountdeals/products
+Hosted at https://quality-sites.github.io/products
 
 ## Built With
 
