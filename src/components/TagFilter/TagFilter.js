@@ -10,7 +10,6 @@ const TagFilter = (props) => {
     const {dispatch, tagItemsCount} = props;
     const handleSelectBox = (e) => {
         const name = e.target.name;
-        console.log('name:', name);
         if(e.target.checked) {
             dispatch(addTagToFilter(name));
         } else {
@@ -41,18 +40,13 @@ const TagFilter = (props) => {
 };
 
 const mapStateToProps = (state) => {
-
     const tagItemsCount = {};
-
     state.shop.products.forEach(p => {
         tagItemsCount[p.tag] = tagItemsCount[p.tag] + 1 || 1;
     });
-
-
     return {
         tagItemsCount
     }
-
 };
 
 export default connect(mapStateToProps)(TagFilter);

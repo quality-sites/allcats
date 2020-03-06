@@ -3,6 +3,8 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {formatMoney} from "../../pipes/priceFormatter";
 import {addProductToCart} from "../../actions";
+import Best from '../../assets/Allcats_badge.svg';
+
 import './Product.scss';
 
 const Product = props => {
@@ -12,8 +14,17 @@ const Product = props => {
         name,
         price,
         image,
-        description
+        description,
+        tag
     } = props.product;
+
+    const BestIcon = props => {
+        if (props.tag==='best'){
+            return <img src={Best} alt="Best" />;
+        } else {
+            return <></>
+        }
+    }
 
     return (
         <div className="card h-100 product">
@@ -24,8 +35,9 @@ const Product = props => {
                 <h4 className="card-title product__title">
                     <Link to={`/products/${id}`}>{name}</Link>
                 </h4>
-                <h5 className="product__price">${formatMoney(price)}</h5>
+                <h5 className="product__price">£{formatMoney(price)}</h5>
                 <p className="card-text product__description">{description}</p>
+                <BestIcon tag={tag} />
                 <button
                     onClick={() => {
                         props.dispatch(addProductToCart({...props.product}))

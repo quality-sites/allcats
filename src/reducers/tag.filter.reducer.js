@@ -1,6 +1,6 @@
 import {ADD_TAG_TO_FILTER, REMOVE_TAG_FROM_FILTER} from "../actions";
 
-export const tagFilterReducer = (state = '', action) => {
+export const  tagFilterReducer = (state = '', action) => {
     switch (action.type) {
         case ADD_TAG_TO_FILTER:
             if(state.includes(action.tag)) return state;

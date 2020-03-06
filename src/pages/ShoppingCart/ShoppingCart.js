@@ -29,9 +29,6 @@ const ShoppingCart = (props) => {
 
 
 const mapStateToProps = state => {
-
-    console.log(state, 'state has changed');
-
     return {
         cartItems: state.shop.cart,
         cartItemCount: state.shop.cart.reduce((count, curItem) => {
