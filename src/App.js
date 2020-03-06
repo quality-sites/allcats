@@ -20,7 +20,7 @@ export const  store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION
 const App = () => {
     return (
         <Provider store={store}>
-            <BrowserRouter>
+            <BrowserRouter basename={'/allcats'}>
             <React.Fragment>
                 <Header/>
                 <Switch>
