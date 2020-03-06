@@ -3,7 +3,7 @@ import {Provider} from 'react-redux';
 import {createStore } from 'redux';
 import rootReducer from './reducers';
 
-import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 import './App.scss';
 import Home from "./pages/Home/Home";
